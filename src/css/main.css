@@ -1,0 +1,335 @@
+    /* common css */
+    *{margin: 0; padding: 0;}
+    body {
+      font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, "sans serif";
+    }
+
+    .layout {
+      width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .clearfix:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    /* page css */
+    html,
+    body {
+      height: 100%;
+    }  
+    ul,li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+    /*header*/
+    #header {
+      height: 100%;
+      /*background: url("../img/bg1.jpg") 0 0 no-repeat;*/
+      background-size: contain;
+    }
+
+    #header .nav {
+      height: 80px; 
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    #header .nav .logo {
+      float: left;
+      padding: 10px 0 0 50px;
+    }
+    
+    #header .nav ul{
+      float: right;
+      padding: 25px 50px 0 0;
+    }
+    
+    #header .nav li {
+      float: left;
+      padding-left: 10px; 
+    }
+  
+    #header .nav a {
+      color: #ddd;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    #header .nav a:hover {
+      color: #fed136;
+    }
+
+    #header .panel {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /*content*/
+    .races-intro h1 {
+      margin: 50px auto 30px auto;
+      color: #3cabe7; 
+    }
+
+    #content .races-intro li {
+      width: 300px;
+      float: left;
+      margin: 80px 0 100px 25px ;
+    }
+
+    .races-intro li h2 {
+      margin: 25px auto;
+      color: #3cabe7;
+     }
+
+    .races-intro li img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 2px #3cabe7 solid;
+    }
+
+    .game-map {
+      background-color: #eee;
+      padding-bottom: 50px; 
+    }
+
+    .game-map h1 {
+      padding: 50px;
+      color: #3cabe7;
+    }
+
+    .game-map li {
+      position: relative;
+      width: 300px;
+      height: 280px;
+      background-color: #fff;
+      float: left;
+      margin: 0px 0 25px 25px ;
+    }
+
+    .game-map li img {
+      width: 100%;
+    }
+    
+    .game-map li p {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .game-map li span {
+      width: 100%;
+      height: 100%;
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(254,209,54,0.4); 
+    }
+
+    .game-map li span p {
+        padding-top: 100px;
+        font-size: 30px;
+        color: #fff;
+    }
+
+    .game-map a:hover span {
+      display: block;
+    }
+ 
+    .game-map .loadmore {
+      color: #3cabe7;
+      border: 1px solid #3cabe7;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .story .title {
+      margin: 50px auto 20px auto;
+      color: #3cabe7;
+    }
+    
+    .story .about {
+      margin-bottom: 50px;
+    }
+
+    .story li {
+      position: relative;
+      padding-bottom: 100px;       
+    }
+
+    .story li img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 2px #3cabe7 solid;
+    }
+
+    .story li div {
+      width: 300px;
+      position: absolute;
+      top: 0;
+      left: 50px;
+      text-align: right;
+    }
+
+    .story li:nth-child(2n) div {
+      left: 650px;
+      text-align: left;
+    }
+
+    .story li:after {
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      border: 1px #3cabe7 solid;
+      top: 0;
+      left: 50%;
+      z-index: -11;
+    }
+
+    .story li:last-child:after {
+      display: none;
+      height: 0;
+    }
+
+    .story .timeline .subtitle,
+    .story .timeline .time {
+      text-align: center;
+    }
+    .story .timeline p {
+      margin-top: 10px;
+    }
+  
+    .developer {
+      background-color: #eee;
+    }
+    .developer h1 {
+      padding-top: 50px;
+      color: #3cabe7; 
+    }
+
+    #content .developer li {
+      width: 200px;
+      float: left;
+      margin: 50px 0 50px 40px ;
+    }
+
+    .developer li img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 2px #3cabe7 solid;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .developer li a {
+      display: inline-block;
+      margin-left: 15px; 
+    }
+    
+    .developer li a:hover {
+      color: #fed136;
+    }
+
+    .contact {
+      background-color: #222;
+      height: 650px;
+      color: #fff;  
+    }
+
+    .contact h1 {
+      text-align: center;
+      padding-top: 100px; 
+      padding-bottom: 50px;
+    }
+
+    .contact .wrap {
+      margin: 0 auto;
+      width: 1000px;
+      height: 250px;
+    }
+
+    .contact input[type=text] {
+      width: 400px;
+      height: 60px;
+      display: block;
+      border-radius: 5px;
+      padding-left: 25px;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .contact  #usermessage{
+        width: 400px;
+        height: 180px;
+        float: right;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 25px;
+        font-size: 20px;
+    }
+
+    .contact input[type=submit] {
+      display: block;
+      margin: 50px auto;
+      padding: 20px 50px;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      text-align: center;
+      background-color: #fed136;
+      border: none;
+      color: #fff;
+    }
+    
+    .contact input[type=submit]:hover {
+      background-color: orange;
+    }
+    
+    #footer li {
+      width: 33.3%;
+      float: left;
+      vertical-align: bottom;
+      margin: 20px 0; 
+    }
+
+    #footer li a {
+      padding: 0 10px;
+    }
+    #footer .copyright {
+      height: 100%;
+      padding-top: 20px;
+      vertical-align: bottom;
+    }
+
+    #footer a:hover {
+      color: orange;
+    }
+
+    #footer .link {
+      padding-top: 20px;
+    }
+
+
+    
+    
